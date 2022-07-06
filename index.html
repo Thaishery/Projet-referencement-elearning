@@ -11,17 +11,17 @@
     />
     <meta name="keywords" content="e-learn, apprendre, cours, vidéo" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>e-learn, vos cours en lignes</title>
+    <title>E-learn, vos cours en lignes</title>
   </head>
   <body>
     <header class="header">
       <div class="header__nav">
         <nav>
           <ul class="header__list">
-            <a href="#" class="header__lien">
-              <li class="header__list__element">Inscription</li>
+            <a class="header__lien" onclick="document.getElementById('modal__register').style.display='block'">
+              <li class="header__list__element" ></li>Inscription</li>
             </a>
-            <a href="#" class="header__lien">
+            <a class="header__lien" onclick="document.getElementById('modal__login').style.display='block'">
               <li class="header__list__element">Connexion</li>
             </a>
           </ul>
@@ -55,6 +55,37 @@
         />
       </section>
     </header>
+    <div id="modal__login" class="modal">
+      <div class="modal__content">
+        <div class="modal__container">
+          <span
+            onclick="document.getElementById('modal__login').style.display='none'"
+            class="modal__topright"
+            >&times;</span
+          >
+          <h1 class="modal__title">Connexion</h1>
+          <input type="text" value="" placeholder="Login" class="modal__field">
+          <input type="password" value="" placeholder="Mot de passe" class="modal__field">
+          <button type="button" class="modal__button">Se connecter</button>
+        </div>
+      </div>
+    </div>
+    <div id="modal__register" class="modal">
+      <div class="modal__content">
+        <div class="modal__container">
+          <span
+            onclick="document.getElementById('modal__register').style.display='none'"
+            class="modal__topright"
+            >&times;</span
+          >
+          <h1 class="modal__title">Inscription</h1>
+          <input type="text" value="" placeholder="Login" class="modal__field">
+          <input type="password" value="" placeholder="Mot de passe" class="modal__field">
+          <input type="password" value="" placeholder="Confirmer votre mot de passe" class="modal__field">
+          <button type="button" class="modal__button">S'inscrire</button>
+        </div>
+      </div>
+    </div>
     <section class="catalogue">
       <div class="catalogue__texts">
         <h1 class="catalogue__texts__title">Catalogue</h1>
