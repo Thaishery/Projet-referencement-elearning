@@ -86,9 +86,9 @@
 }
 .catalogue__images__caption {
   position: relative;
-  bottom: 100px;
-  left: 50px;
-  max-width: 40%;
+  bottom: 110px;
+  left: 35px;
+  max-width: 60%;
   background-color: white;
   line-height: 24px;
   text-align: center;
